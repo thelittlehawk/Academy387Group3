@@ -15,6 +15,7 @@
 		20A0DB8B1A2F76B200317305 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20A0DB891A2F76B200317305 /* LaunchScreen.xib */; };
 		20A0DB971A2F76B200317305 /* Day2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A0DB961A2F76B200317305 /* Day2Tests.m */; };
 		20C8A5171A30CB6F00575E0E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5161A30CB6F00575E0E /* User.m */; };
+		20C8A51A1A30E4CD00575E0E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5191A30E4CD00575E0E /* ShowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		20A0DB961A2F76B200317305 /* Day2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day2Tests.m; sourceTree = "<group>"; };
 		20C8A5151A30CB6F00575E0E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		20C8A5161A30CB6F00575E0E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		20C8A5181A30E4CD00575E0E /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		20C8A5191A30E4CD00575E0E /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 		20C8A5141A30CAB000575E0E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				20C8A5181A30E4CD00575E0E /* ShowViewController.h */,
+				20C8A5191A30E4CD00575E0E /* ShowViewController.m */,
 				20A0DB811A2F76B200317305 /* ViewController.h */,
 				20A0DB821A2F76B200317305 /* ViewController.m */,
 			);
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C8A5171A30CB6F00575E0E /* User.m in Sources */,
+				20C8A51A1A30E4CD00575E0E /* ShowViewController.m in Sources */,
 				20A0DB831A2F76B200317305 /* ViewController.m in Sources */,
 				20A0DB801A2F76B200317305 /* AppDelegate.m in Sources */,
 				20A0DB7D1A2F76B200317305 /* main.m in Sources */,

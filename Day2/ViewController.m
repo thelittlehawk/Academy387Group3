@@ -20,9 +20,18 @@
 }
 
 - (IBAction)saveClicked:(id)sender {
-    User *user = [[User alloc] initWithFirstName:self.firstNameTextField.text andLastName:self.lastNameTextField.text];
+    self.user = [[User alloc] initWithFirstName:self.firstNameTextField.text andLastName:self.lastNameTextField.text];
     
-    self.resultTextField.text = [user getFullName];
+    //self.resultTextField.text = [user getFullName];
+    [self performSegueWithIdentifier:@"showUser" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqual: @"showUser"]) {
+        ShowViewController *controller = (ShowViewController*)[segue destinationViewController];
+        //controller.resultLabel.text = [self.user getFullName];
+        [controller setNewUser:self.user];
+    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
