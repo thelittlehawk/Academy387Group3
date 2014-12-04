@@ -20,12 +20,9 @@
 }
 
 - (IBAction)saveClicked:(id)sender {
-    NSString *firstName = self.firstNameTextField.text;
-    NSString *lastName = self.lastNameTextField.text;
+    User *user = [[User alloc] initWithFirstName:self.firstNameTextField.text andLastName:self.lastNameTextField.text];
     
-    NSString *fullName = [[NSString alloc] initWithFormat:@"%@, %@", firstName, lastName];
-    
-    self.resultTextField.text = fullName;
+    self.resultTextField.text = [user getFullName];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
